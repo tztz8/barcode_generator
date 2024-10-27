@@ -1,7 +1,9 @@
 [package]
-name = "template"
+name = "barcode_generator"
 version = "0.1.0"
 edition = "2021"
+authors = ["Timbre Freeman (tztz8)"]
+description = "A simple barcode generator app written in rust for desktop, web and android"
 
 [lib]
 crate-type = ["cdylib", "rlib"]

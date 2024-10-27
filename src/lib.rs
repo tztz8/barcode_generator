@@ -6,10 +6,10 @@ pub extern "C" fn start_app() {
     android_logger::init_once(
         android_logger::Config::default()
             .with_min_level(log::Level::Trace)
-            .with_tag("template"),
+            .with_tag("generator"),
     );
 
-    dioxus_desktop::wry::android_binding!(com_example, template, _start_app, dioxus_desktop::wry);
+    dioxus_desktop::wry::android_binding!(tech_tftinker_barcode, generator, _start_app, dioxus_desktop::wry);
 }
 
 #[cfg(target_os = "android")]
@@ -37,7 +37,7 @@ pub fn main() {
 fn app(cx: Scope) -> Element {
     cx.render(rsx! {
         div {
-            "hello world"
+            "Hello and Welcome to Barcode Generator!"
         }
     })
 }

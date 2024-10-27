@@ -1,3 +1,3 @@
-package com.example.template
+package tech.tftinker.barcode.generator
 
 class MainActivity : TauriActivity()

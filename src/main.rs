@@ -1,3 +1,3 @@
 fn main() {
-    template::main();
+    barcode_generator::main();
 }
